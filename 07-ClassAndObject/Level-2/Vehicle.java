@@ -1,9 +1,9 @@
-class Vehicle {
+public class Vehicle {
 
     String ownerName;
     String vehicleType;
 
-    public static int registrationFee = 1000;
+    static int registrationFee = 1000;
 
     Vehicle(String o, String v) {
         ownerName = o;
@@ -11,9 +11,10 @@ class Vehicle {
     }
 
     void displayVehicleDetails() {
-        System.out.println("owner name: " + ownerName);
-        System.out.println("vehicle type: " + vehicleType);
-        System.out.println("registration fee: " + registrationFee);
+        System.out.println("Owner Name: " + ownerName);
+        System.out.println("Vehicle Type: " + vehicleType);
+        System.out.println("Registration Fee: " + registrationFee);
+        System.out.println();
     }
 
     static void updateRegistrationFee(int fee) {
@@ -22,14 +23,15 @@ class Vehicle {
 
     public static void main(String[] args) {
 
-        Vehicle v1 = new Vehicle("Rahul", "Car");
-        Vehicle v2 = new Vehicle("Aman", "Bike");
+        Vehicle v1 = new Vehicle("khushi", "Car");
+        Vehicle v2 = new Vehicle("Akshara", "Bike");
 
         v1.displayVehicleDetails();
         v2.displayVehicleDetails();
 
-        Vehicle.updateRegistrationFee(1500);
+        updateRegistrationFee(1500);
 
         v1.displayVehicleDetails();
+        v2.displayVehicleDetails();
     }
 }
