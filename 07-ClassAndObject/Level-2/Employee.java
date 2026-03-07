@@ -1,4 +1,4 @@
-class Employee {
+public class Employee {
 
     public int id;
     protected String dept;
@@ -11,18 +11,7 @@ class Employee {
     int getSalary() {
         return sal;
     }
-}
 
-class Manager extends Employee {
-
-    public void show() {
-        System.out.println("Employee ID: " + id);
-        System.out.println("Department: " + dept);
-        System.out.println("Salary: " + getSalary());
-    }
-}
-
-class Main {
     public static void main(String[] args) {
 
         Manager m = new Manager();
@@ -32,5 +21,14 @@ class Main {
         m.setSalary(500000);
 
         m.show();
+    }
+}
+
+class Manager extends Employee {
+
+    public void show() {
+        System.out.println("Employee ID: " + id);
+        System.out.println("Department: " + dept);
+        System.out.println("Salary: " + getSalary());
     }
 }
