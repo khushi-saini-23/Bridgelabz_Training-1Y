@@ -1,4 +1,4 @@
-class BankAccount {
+public class BankAccount {
 
     public int accNo;
     protected String name;
@@ -11,18 +11,7 @@ class BankAccount {
     int getBalance() {
         return bal;
     }
-}
 
-class SavingsAccount extends BankAccount {
-
-    void show() {
-        System.out.println("Account Number: " + accNo);
-        System.out.println("Account Holder: " + name);
-        System.out.println("Balance: " + getBalance());
-    }
-}
-
-class Main {
     public static void main(String[] args) {
 
         SavingsAccount a = new SavingsAccount();
@@ -32,5 +21,14 @@ class Main {
         a.setBalance(5000);
 
         a.show();
+    }
+}
+
+class SavingsAccount extends BankAccount {
+
+    void show() {
+        System.out.println("Account Number: " + accNo);
+        System.out.println("Account Holder: " + name);
+        System.out.println("Balance: " + getBalance());
     }
 }
