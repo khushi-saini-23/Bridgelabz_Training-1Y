@@ -1,5 +1,5 @@
 public class Product{
-	String productName;
+	String name;
 	int price;
 	public static int total = 0;
 
@@ -9,11 +9,11 @@ public class Product{
         total++;
     }
     void show() {
-        System.out.println("Name: " + name);
-        System.out.println("Price: " + price);
+        System.out.println("Name: " +name);
+        System.out.println("Price: " +price);
     }
     static void showTotal() {
-        System.out.println("Total Products: " + total);
+        System.out.println("Total Products: " +total);
     }
 
     public static void main(String[] args) {
