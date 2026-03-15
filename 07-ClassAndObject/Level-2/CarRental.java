@@ -15,7 +15,7 @@ class CarRental {
         rentaldays = d;
     }
     int totalCost() {
-        int pricePerDay = 500;
+        int pricePerDay = 5000;
         return rentaldays * pricePerDay;
     }
     void show() {
@@ -29,7 +29,7 @@ class CarRental {
     public static void main(String[] args) {
 
         CarRental r1 = new CarRental();
-        CarRental r2 = new CarRental("Akshara", "BMW", 3);
+        CarRental r2 = new CarRental("Khushi", "BMW", 3);
 
         r1.show();
         r2.show();
