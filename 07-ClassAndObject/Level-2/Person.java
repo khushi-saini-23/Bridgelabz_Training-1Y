@@ -14,7 +14,7 @@ public class Person{
 		System.out.println("age:"+age);
 	}
 	public static void main(String[]args){
-		Person p1 = new Person("Akshara",18);
+		Person p1 = new Person("Khushi",18);
 		Person p2 = new Person(p1);
 		p1.show();
 		p2.show();
